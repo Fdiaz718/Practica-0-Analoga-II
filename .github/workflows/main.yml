@@ -1,0 +1,17 @@
+name: Compilar LaTeX
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+      - name: Compilar PDF
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: nombre_de_tu_archivo.tex # Cambia esto por el nombre de tu .tex
+      - name: Subir PDF como resultado
+        uses: actions/upload-artifact@v3
+        with:
+          name: Informe-PDF
+          path: nombre_de_tu_archivo.pdf
