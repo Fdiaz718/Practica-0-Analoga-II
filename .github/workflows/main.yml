@@ -16,21 +16,4 @@ jobs:
         uses: actions/upload-artifact@v4 
         with:
           name: Informe-PDF-Generado
-          path: informe_0_analoga_II.pdf # <--- ASEGÚRATE QUE ESTE NOMBRE SEA IGUAL AL PDF GENERADO
-name: Compilar LaTeX
-on: [push]
-jobs:
-  build_latex:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout código
-        uses: actions/checkout@v3
-      - name: Compilar PDF
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: main.tex
-      - name: Subir PDF como resultado
-        uses: actions/upload-artifact@v3
-        with:
-          name: Informe-PDF
           path: informe_0_analoga_II.pdf
