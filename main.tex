@@ -1,9 +1,11 @@
 \documentclass[conference]{IEEEtran}
-\usepackage[utf8]{inputenc} 
-\usepackage{graphicx} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{cite}
-\usepackage{hyperref} 
+\usepackage{hyperref}
+\usepackage{float}
 
 \title{\textbf{Informe de Laboratorio 0: Equipos de medición en alta frecuencia}} 
 
@@ -41,7 +43,7 @@ Describe los materiales y métodos empleados en el experimento de forma clara y 
 \section{Resultados}
 Los datos obtenidos con cada uno de los dispositivos de medición se muestran en las tablas a continuación.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{Mediciones realizadas con el Osciloscopio}
 \label{tab:osciloscopio}
@@ -68,14 +70,14 @@ Los datos obtenidos con cada uno de los dispositivos de medición se muestran en
 \end{tabular}
 \end{table}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{medicionesOSCI.png}
     \caption{Gráfica mediciones osciloscopio}
     \label{fig:grafica_osci}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{Mediciones realizadas con el Multímetro (MMD)}
 \label{tab:multimetro}
@@ -102,7 +104,7 @@ Los datos obtenidos con cada uno de los dispositivos de medición se muestran en
 \end{tabular}
 \end{table}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{medidasMMD.png}
     \caption{Gráfica medidas multimetro digital}
