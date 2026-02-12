@@ -4,111 +4,97 @@
 \usepackage{amsmath}
 \usepackage{cite}
 \usepackage{hyperref} 
-% Título y autores
-\title{\textbf{Plantilla}} 
+
+\title{\textbf{Informe de Laboratorio 0: Equipos de medición en alta frecuencia}} 
+
 \author{
-    \IEEEauthorblockN{Felipe Diaz Gordillo} 
+    \IEEEauthorblockN{Felipe Diaz Gordillo, aaa, aaa} 
     \IEEEauthorblockA{
-        Facultad de Ingeniera Eléctrica y Electrónica\\
+        Facultad de Ingeniería Eléctrica y Electrónica\\
         Universidad Nacional de Colombia \\
-        22 de Enero de 2026 \\
-        Correo Electrónico: \text{fdiazgo, aaa, aaa - @unal.edu.co}}
+        Bogotá, Colombia \\
+        fdiazgo, aaaa, aaaa@unal.edu.co}
 }
-
-
 
 \begin{document}
 \maketitle
+
 \begin{abstract}
-El resumen debe proporcionar una visión general breve de los objetivos, el enfoque, los resultados clave y las conclusiones del informe. Escribe entre 150 y 250 palabras.
+Este informe presenta el análisis comparativo de mediciones de voltaje en diversos nodos de un circuito utilizando un osciloscopio y un multímetro digital (MMD) a través de un amplio rango de frecuencias. Se incluye la explicación del comportamiento de diversos componentes utilizados en las mediciones de laboratorio y como estos pueden afectar el comportamiento de los circutios.
 \end{abstract}
+
 \begin{IEEEkeywords}
-PALABRAS CLAVE
+Osciloscopio, Multímetro, Respuesta en frecuencia, Mediciones eléctricas, Sondas.
 \end{IEEEkeywords}
 
-
-
-
-
 \section{Introducción}
-En esta sección, describe el contexto del experimento, los objetivos y cualquier información relevante de antecedentes. Explica por qué el experimento es importante y cuáles son las preguntas o hipótesis principales.
-
-\section{Marco Teórico}
-Incluye las bases teóricas necesarias para entender el experimento. Proporciona ecuaciones clave, explicaciones y citas relevantes de la literatura.
-
-\section{Metodología}
-Describe los materiales y métodos empleados en el experimento de forma clara y detallada. Incluye:
-- Lista de materiales utilizados.
-- Procedimientos experimentales paso a paso.
+FALTA
 
 \section{Resultados}
-Los datos que se obtuvieron con cada uno de los dispositivos de medición se muestran en las tablas a continuación:
+Los datos obtenidos con cada uno de los dispositivos de medición se muestran en las tablas a continuación.
+
+% Tabla 1: Osciloscopio
 \begin{table}[h]
 \centering
+\caption{Mediciones realizadas con el Osciloscopio (mV)}
 \label{tab:osciloscopio}
 \begin{tabular}{|c|c|c|c|}
 \hline
-\textbf{Frecuencia} & \textbf{Nodo A (mV)} & \textbf{Nodo B (mV)} & \textbf{Nodo C (mV)} \\ \hline
-100 Hz (Ref)        & 364                  & 182                  & 124                  \\ \hline
-10 Hz               & 295                  & 145                  & 110                  \\ \hline
-30 Hz               & 350                  & 174                  & 120                  \\ \hline
-70 Hz               & 358                  & 178                  & 121                  \\ \hline
-200 Hz              & 360                  & 179                  & 121                  \\ \hline
-500 Hz              & 360                  & 179                  & 121                  \\ \hline
-1 kHz               & 360                  & 179                  & 119                  \\ \hline
-2 kHz               & 360                  & 179                  & 113                  \\ \hline
-5 kHz               & 360                  & 180                  & 85.8                 \\ \hline
-10 kHz              & 354                  & 178                  & 55.8                 \\ \hline
-50 kHz              & 355                  & 176                  & 14                   \\ \hline
-100 kHz             & 355                  & 170                  & 9                    \\ \hline
-500 kHz             & 354                  & 102                  & 6.8                  \\ \hline
-1 MHz               & 354                  & 59                   & 10.9                 \\ \hline
-5 MHz               & 348                  & 14                   & 7.11                 \\ \hline
-15 MHz              & 231                  & 7.1                  & 6                    \\ \hline
-25 MHz              & 130                  & 5.1                  & 6                    \\ \hline
-\caption{Mediciones realizadas con el Osciloscopio}
+\textbf{Frecuencia} & \textbf{Nodo A} & \textbf{Nodo B} & \textbf{Nodo C} \\ \hline
+100 Hz (Ref) & 364 & 182 & 124 \\ \hline
+10 Hz        & 295 & 145 & 110 \\ \hline
+30 Hz        & 350 & 174 & 120 \\ \hline
+70 Hz        & 358 & 178 & 121 \\ \hline
+200 Hz       & 360 & 179 & 121 \\ \hline
+500 Hz       & 360 & 179 & 121 \\ \hline
+1 kHz        & 360 & 179 & 119 \\ \hline
+2 kHz        & 360 & 179 & 113 \\ \hline
+5 kHz        & 360 & 180 & 85.8 \\ \hline
+10 kHz       & 354 & 178 & 55.8 \\ \hline
+50 kHz       & 355 & 176 & 14 \\ \hline
+100 kHz      & 355 & 170 & 9 \\ \hline
+500 kHz      & 354 & 102 & 6.8 \\ \hline
+1 MHz        & 354 & 59  & 10.9 \\ \hline
+5 MHz        & 348 & 14  & 7.11 \\ \hline
+15 MHz       & 231 & 7.1 & 6 \\ \hline
+25 MHz       & 130 & 5.1 & 6 \\ \hline
 \end{tabular}
 \end{table}
 
-
+% Tabla 2: Multímetro
 \begin{table}[h]
 \centering
+\caption{Mediciones realizadas con el Multímetro (MMD) (mV)}
 \label{tab:multimetro}
 \begin{tabular}{|c|c|c|c|}
 \hline
-\textbf{Frecuencia} & \textbf{Nodo A (mV)} & \textbf{Nodo B (mV)} & \textbf{Nodo C (mV)} \\ \hline
-100 Hz (Ref)        & 357                  & 178                  & 182                  \\ \hline
-10 Hz               & 345                  & 172                  & 177                  \\ \hline
-30 Hz               & 357                  & 180                  & 250                  \\ \hline
-70 Hz               & 357                  & 180                  & 177                  \\ \hline
-200 Hz              & 357                  & 178                  & 177                  \\ \hline
-500 Hz              & 357                  & 178                  & 248                  \\ \hline
-1 kHz               & 354                  & 177                  & 267                  \\ \hline
-2 kHz               & 344                  & 173                  & 272                  \\ \hline
-5 kHz               & 302                  & 152                  & 227                  \\ \hline
-10 kHz              & 246                  & 124                  & 81                   \\ \hline
-50 kHz              & 160                  & 44                   & 69                   \\ \hline
-100 kHz             & 70                   & 10                   & 62                   \\ \hline
-500 kHz             & 6                    & 7                    & 173                  \\ \hline
-1 MHz               & 6                    & 6                    & 67                   \\ \hline
-5 MHz               & 6                    & 6                    & 70                   \\ \hline
-15 MHz              & 6                    & 6                    & 72                   \\ \hline
-25 MHz              & 6                    & 6                    & 72                   \\ \hline
-\caption{Mediciones realizadas con el Multímetro (MMD) (Valores en mV)}
+\textbf{Frecuencia} & \textbf{Nodo A} & \textbf{Nodo B} & \textbf{Nodo C} \\ \hline
+100 Hz (Ref) & 357 & 178 & 182 \\ \hline
+10 Hz        & 345 & 172 & 177 \\ \hline
+30 Hz        & 357 & 180 & 250 \\ \hline
+70 Hz        & 357 & 180 & 177 \\ \hline
+200 Hz       & 357 & 178 & 177 \\ \hline
+500 Hz       & 357 & 178 & 248 \\ \hline
+1 kHz        & 354 & 177 & 267 \\ \hline
+2 kHz        & 344 & 173 & 272 \\ \hline
+5 kHz        & 302 & 152 & 227 \\ \hline
+10 kHz       & 246 & 124 & 81 \\ \hline
+50 kHz       & 160 & 44  & 69 \\ \hline
+100 kHz      & 70  & 10  & 62 \\ \hline
+500 kHz      & 6   & 7   & 173 \\ \hline
+1 MHz        & 6   & 6   & 67 \\ \hline
+5 MHz        & 6   & 6   & 70 \\ \hline
+15 MHz       & 6   & 6   & 72 \\ \hline
+25 MHz       & 6   & 6   & 72 \\ \hline
 \end{tabular}
 \end{table}
 
-
-
-
-
 \section{Discusión}
-Analiza los resultados obtenidos en el contexto de los objetivos del experimento. Discute las posibles fuentes de error, limitaciones y cómo los resultados se comparan con expectativas o teorías previas.
+Se observa que a altas frecuencias (mayores a 100 kHz), el multímetro pierde precisión significativamente comparado con el osciloscopio, lo cual es de esperar por el ancho de banda del instrumento.
 
 \section{Conclusiones}
-Resume los puntos clave del experimento, sus hallazgos y su relevancia. Incluye recomendaciones para investigaciones futuras, si corresponde.
-
+Las mediciones son consistentes en bajas frecuencias, validando el uso de ambos equipos para señales de audio, pero restringiendo el MMD para aplicaciones de alta frecuencia.
 
 \bibliographystyle{IEEEtran}
-\bibliography{referencias} %citar en texto
+% \bibliography{referencias} % Descomenta esto solo si tienes un archivo referencias.bib
 \end{document}
