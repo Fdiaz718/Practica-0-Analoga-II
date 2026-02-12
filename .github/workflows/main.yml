@@ -16,4 +16,4 @@ jobs:
         uses: actions/upload-artifact@v4 
         with:
           name: Informe-PDF-Generado
-          path: informe_0_analoga_II.pdf
+          path: main.pdf
