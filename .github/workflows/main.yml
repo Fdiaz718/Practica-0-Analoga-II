@@ -9,9 +9,9 @@ jobs:
       - name: Compilar PDF
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: nombre_de_tu_archivo.tex # Cambia esto por el nombre de tu .tex
+          root_file: main.tex
       - name: Subir PDF como resultado
         uses: actions/upload-artifact@v3
         with:
           name: Informe-PDF
-          path: nombre_de_tu_archivo.pdf
+          path: informe_0_analoga_II.pdf
