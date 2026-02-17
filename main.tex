@@ -26,7 +26,7 @@ AAA
 \end{abstract}
 
 \begin{IEEEkeywords}
-Osciloscopio, Multímetro, Respuesta en frecuencia, Mediciones eléctricas, Sondas.
+Osciloscopio, Multímetro, Respuesta en frecuencia, Mediciones eléctricas, Sondas, Efecto de Carga.
 \end{IEEEkeywords}
 
 \section{Introducción}
@@ -36,11 +36,32 @@ En esta sección, describe el contexto del experimento, los objetivos y cualquie
 Incluye las bases teóricas necesarias para entender el experimento. Proporciona ecuaciones clave, explicaciones y citas relevantes de la literatura.
 
 \section{Metodología}
-Describe los materiales y métodos empleados en el experimento de forma clara y detallada. Incluye:
-- Lista de materiales utilizados.
-- Procedimientos experimentales paso a paso.
+Los materiales que se utilizarón para esta practica fueron:
+\begin{itemize}
+    \item Multimetro Digital (MMD)
+    \item Osciloscopio de doble canal
+    \item Sondas comunes y sondas atenuadoras
+    \item Generador de señales
+    \item Resistencias
+\end{itemize}
+
+\Subsection{Procedimiento}
+Antes de realizar mediciones en el laboratorio se realizarón una serie de simulaciones con el objetivo de saber cuales eran los resultados ideales o esperados, esto para poder hacer una comparación relevante de los datos, ademas de entender los fenomenos que deberian suceder. Fue importante hacer una investigacion sobre los elementos de medición que se usarian en la practica, como el osciloscopio y el MMD para conocer los valores de impedancia interna que tienen y a que escalas estos afectan a las mediciones; se incluyo en la investigación la resolucion de los dispositivos a diferentes frecuencias.
+
+Para hacer las medidas en el laboratorio los pasos a seguir fueron:
+\begin{enumerate}
+    \item Hacer el montaje del circutio que se trabajaria para realizar mediciones, marcando claramente cada uno de los nodos. 
+    \item Se realiza la conexion del generador de señales y se configura a una frecuencia de 100Hz.
+    \item Se hace la medición de voltaje en cada uno de los nodos utilizando tanto el osciloscopio como el multimetro.
+    \item Se hace un barrio de frecuencias desde 1Hz hasta 30MHz, para cada frecuencia elegida se mide cada uno de los nodos y se registran los datos en una tabla.
+\end{enumerate}
+
+Posterior al laboratorio se construyeron las graficas \ref{fig:grafica_osci} y \ref{fig:grafica_mmd} que se pueden observar en \ref{sec:Res}, se hizo el analisis de resultados y las comparaciones pertienetes entre los datos de simulacion previos al laboratorio y los datos tomados en la practica.
+
+
 
 \section{Resultados}
+\label{sec:Res}
 Los datos obtenidos con cada uno de los dispositivos de medición se muestran en las tablas a continuación.
 
 \begin{table}[H]
