@@ -30,7 +30,7 @@ Osciloscopio, Multímetro, Frecuencia, Mediciones eléctricas, Efecto de Carga.
 \end{IEEEkeywords}
 
 \section{Introducción}
-La medición de señales en alta frecuencia presenta desafíos importantes debido a la interacción entre el instrumento y el circuito bajo prueba. Uno de los fenómenos más relevantes es el efecto de carga, mediante el cual las características internas del equipo de medición alteran la respuesta del circuito, generando errores en los valores observados. Este efecto se vuelve especialmente significativo cuando se emplean instrumentos con limitaciones en su ancho de banda o impedancias no ideales.//
+La medición de señales en alta frecuencia presenta desafíos importantes debido a la interacción entre el instrumento y el circuito bajo prueba. Uno de los fenómenos más relevantes es el efecto de carga, mediante el cual las características internas del equipo de medición alteran la respuesta del circuito, generando errores en los valores observados. Este efecto se vuelve especialmente significativo cuando se emplean instrumentos con limitaciones en su ancho de banda o impedancias no ideales.
 
 En el presente informe se estudia experimentalmente el efecto de carga mediante un barrido en frecuencia aplicado al circuito de la guía. Se analizan y comparan las mediciones obtenidas con un multímetro digital y un osciloscopio, con el objetivo de identificar las limitaciones de cada equipo y su impacto en la exactitud de la medición.
 
@@ -48,26 +48,27 @@ A partir de la hoja de datos de los dispositivos empleados en la práctica de la
 Es el cable con una punta que se usa para conectar el circuito al osciloscopio. Ayuda a que la señal que se quiere medir llegue clara y sin interferencias, especialmente cuando es una señal que cambia lentamente. La que se encuentran en el laboratorio es una P6100 BNC, y operando en su posición de atenuación X1. De acuerdo con su ficha técnica, sus parámetros son:
 
 \begin{itemize}
-    \itemImpedancia resistiva: 1 M$\Omega$
-    \itemCapacidad parásita: 90 pF
+    \itemImpedancia resistiva: 1M&Omega.
+    \itemCapacidad parásita: 90pF.
 \end{itemize}
 
-\subsubsection{Osciloscopio}
+\subsubsection{Osciloscopio:}
 Es una pantalla que representa cómo cambia el voltaje de una señal con el paso del tiempo. Básicamente, nos permite "ver" la electricidad.
 El modelo que usamos fue el \textit{Tektronix TBS 1102B-EDU}. Tiene una función muy importante llamada "disparo" o "trigger", que sirve para congelar la imagen en la pantalla y poder ver la señal quieta; si no, la onda se movería todo el tiempo y no se podria analizar detalladamente. Sus características de entrada (lo que el osciloscopio "ofrece" al circuito que se esta midiendo) son:
 \begin{itemize}
-    \item Resistencia: $1M\Omega$.
-    \item Capacitancia: $20pF$.
+    \item Resistencia: 1M&Omega.
+    \item Capacitancia: 20pF.
 \end{itemize}
 
-\subsubsection{Generador de señales}
+\subsubsection{Generador de señales:}
 Es un aparato que fabrica ondas eléctricas (como senos, cuadradas, triangulares) para poder inyectarlas en un circuito y probar cómo se comporta. Es como un "instrumento de prueba" que se usa para simular diferentes condiciones. Su característica principal es:
 \begin{itemize}
-    \item Resistencia interna de salida: $50\Omega$ (ohmios).
+    \item Resistencia interna de salida: 50&Omega.
 \end{itemize}
 
 
 \section{Metodología}
+
 Los materiales que se utilizarón para esta practica fueron:
 \begin{itemize}
     \item Multimetro Digital (MMD)
